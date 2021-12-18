@@ -1,0 +1,57 @@
+*,
+ ::before,
+ ::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.moon {
+    height: 100vh;
+    background: #222;
+    position: relative;
+    background: url(../img/space-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.moon img {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+}
+
+h1 {
+    font-weight: 200;
+    font-size: 150px;
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: #ffffff;
+}
+
+h1 span {
+    font-size: 40px;
+    display: block;
+}
+
+@media screen and (max-width: 950px) {
+    h1 {
+        line-height: 1;
+        text-align: center;
+    }
+}
+
+.moon img:nth-child(1) {
+    width: 100%;
+    top: 55%;
+    z-index: 2;
+}
