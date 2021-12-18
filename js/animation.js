@@ -1,19 +1,18 @@
-const theMoonContainer = document.querySelector('.moon');
-const title = document.querySelector('h1');
+const mountainRange = document.querySelector('.moon img');
+const title = document.querySelector('h1')
 
-gsap.to(theMoonContainer, {
+gsap.to(mountainRange, {
     y: 100,
     scrollTrigger: {
-        trigger: 'home-mountains',
+        trigger: 'moon',
         scrub: true
     }
 })
 
-
 gsap.to(title, {
-    y: 400,
+    y: 500,
     scrollTrigger: {
-        trigger: "home-mountains",
+        trigger: "moon",
         scrub: true
     }
 })

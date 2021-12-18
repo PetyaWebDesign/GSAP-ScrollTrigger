@@ -28,6 +28,7 @@ body {
 }
 
 h1 {
+    font-family: Martel Sans;
     font-weight: 200;
     font-size: 150px;
     position: absolute;
@@ -40,7 +41,7 @@ h1 {
 
 h1 span {
     font-size: 40px;
-    display: block;
+    font-family: Montserrat;
 }
 
 @media screen and (max-width: 950px) {
@@ -51,7 +52,28 @@ h1 span {
 }
 
 .moon img:nth-child(1) {
-    width: 100%;
+    width: 2000px;
+    /* height: 1000px; */
     top: 55%;
+    left: 0;
     z-index: 2;
+}
+
+
+/* Content */
+
+.content {
+    text-align: left;
+    padding: 50px 10px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content h2 {
+    font-size: 50px;
+    padding-bottom: 30px;
+}
+
+.content p {
+    font-size: 20px;
 }
