@@ -33,7 +33,7 @@ h1 {
     font-size: 150px;
     position: absolute;
     left: 50%;
-    top: 30%;
+    top: 35%;
     transform: translateX(-50%);
     z-index: 1;
     color: #ffffff;
@@ -52,15 +52,14 @@ h1 span {
 }
 
 .moon img:nth-child(1) {
-    width: 2000px;
-    /* height: 1000px; */
-    top: 55%;
+    width: 100%;
+    bottom: 0;
     left: 0;
     z-index: 2;
 }
 
 
-/* Content */
+/* Content block 1 */
 
 .content-block-1 {
     height: 100vh;
@@ -69,8 +68,21 @@ h1 span {
     align-items: center;
 }
 
-.content-block-1 h2 {
+.falcon-info {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.falcon-info h2 {
     font-family: Martel Sans;
     font-size: 50px;
-    visibility: hidden;
+    text-align: center;
+    line-height: 1;
+    margin-bottom: 1em;
+}
+
+.falcon-info span {
+    font-family: Montserrat;
+    display: block;
 }

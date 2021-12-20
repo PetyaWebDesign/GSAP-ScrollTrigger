@@ -1,6 +1,7 @@
 const moonContent = document.querySelector('.moon img');
 const title = document.querySelector('.moon-title');
-const blockTitleOne = document.querySelector('h2');
+const blockTwo = document.querySelector('.falcon-info');
+
 
 
 // entry section animation
@@ -21,14 +22,16 @@ gsap.to(title, {
 })
 
 // first content block
-gsap.to(blockTitleOne, {
-    duration: 1,
+gsap.to(blockTwo, {
+    // duration: 1,
     scale: 0.5,
     y: 200,
     autoAlpha: 0,
     scrollTrigger: {
-        trigger: '.content-block-1 h2',
+        trigger: '.falcon-info',
         scrub: true,
-        start: 'top 50%'
+        start: 'top 60%',
+        end: 'center 10%',
+        markers: true
     }
 })
