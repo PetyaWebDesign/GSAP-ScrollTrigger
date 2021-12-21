@@ -86,3 +86,42 @@ h1 span {
     font-family: Montserrat;
     display: block;
 }
+
+
+/* Falcon section */
+
+.section {
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.s1 {
+    background-image: url('../img/falcon-lines.jpg');
+}
+
+.s2 {
+    background-image: url('../img/falcon-full.jpg');
+}
+
+.tooltip {
+    width: 700px;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    margin-left: 200px;
+    color: #fff;
+}
+
+.tooltip p {
+    font-size: 1em;
+}
+
+.tooltip img {
+    width: 400px;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
